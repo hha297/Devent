@@ -64,6 +64,12 @@ export async function GET(req: NextRequest) {
                 return NextResponse.json({ events }, { status: 200 });
         } catch (error) {
                 console.error(error);
-                return NextResponse.json({ message: 'Failed to fetch events' }, { status: 500 });
+                return NextResponse.json(
+                        {
+                                message: 'Failed to fetch events',
+                                error: error instanceof Error ? error.message : 'Unknown',
+                        },
+                        { status: 500 },
+                );
         }
 }

@@ -14,7 +14,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.552.0",
     "mongoose": "^8.20.0",
-    "next": "16.0.1",
+    "next": "16.0.7",
     "ogl": "^1.0.11",
     "posthog-js": "^1.293.0",
     "posthog-node": "^5.11.2",
